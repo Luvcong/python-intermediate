@@ -7,7 +7,14 @@
 
 # 리스트 및 튜플 고급
 # 3) Tuple Adbanced
-# Unpacking
+# unpacking
+#   - * 미사용
+#   - 고정 개수 변수에 요소를 1:1로 할당
+
+# extended unpacking
+#   - * 사용
+#   - 가변 개수 요소를 하나의 변수로 수집
+#   - *rest는 남은 요소를 모두 수집하여 list로 반환
 
 # b, a = a, b   => temp와 같은 변수를 사용하지 않아도 바로 교체 대체 가능
 print(divmod(100, 9))   # (11, 1) - 목과 나머지 출력

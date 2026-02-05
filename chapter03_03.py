@@ -117,3 +117,34 @@ print('----------')
 # 출력
 for s in students2 :
     print(s)
+
+# -- 실습 (메모)
+students = [
+    ('A', 90, 85, 88),
+    ('B', 70, 95, 92),
+]
+
+def average(student):
+    name = student[0]
+    kor  = student[1]
+    eng  = student[2]
+    math = student[3]
+    return (kor + eng + math) / 3
+
+for s in students:
+    print(s[0], average(s))
+
+
+from collections import namedtuple
+
+Students = namedtuple('Students', ['name', 'kor', 'eng', 'math'])
+students = [
+    Students('A', 90, 85, 88),
+    Students('B', 70, 95, 92)
+]
+
+def average(student) :
+    return (student.kor + student.eng + student.math) / 3
+
+for s in students :
+    print(s.name, average(s))

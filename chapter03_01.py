@@ -44,7 +44,7 @@ class Fruit :
         return self._price - x._price
     
     def __le__(self, x) :
-        print('Called >> __sub__')
+        print('Called >> __le__')
         if self._price <= x._price :
             return True
         else :

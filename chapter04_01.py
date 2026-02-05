@@ -1,5 +1,5 @@
 # Chapter04-01
-# 시퀀스형
+# 시퀀스형 : 순서가 있고(index로 접근 가능), 반복(iteration)이 가능한 자료형
 #   컨테이너(Container : 서로 다른 자료형 ([List, Tuple, Collections.deque])
 #   플랫(Flat : 한 개의 자료형[str, bytes, bytearrats, array, memoryview])
 #   가변형(list, byteArray, array.array, memoryview, deque)

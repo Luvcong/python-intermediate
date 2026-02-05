@@ -61,12 +61,12 @@ print('----------')
 {'_company': 'Bmw', '_details': {'color': 'Black', 'horsepower': 270, 'price': 5000}}
 """
 
-# Doctring 확인
+# Docstring 확인
 print(Car.__doc__)
 print('----------')
 
-car1.detail_info()
-Car.detail_info(car2)
+car1.detail_info()      # 인스턴스를 통해 메서드 호출 **
+Car.detail_info(car2)   # 클래스에서 함수를 직접 호출하여 인스턴스 전달
 print('----------')
 
 # 비교

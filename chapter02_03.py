@@ -24,8 +24,8 @@ class Car() :
     def __repr__(self) :    # 엔지니어 레벨에서 자세한 문자열을 확인할 떄
         return 'repr : {} - {}'.format(self._company, self._details)
     
-    # Instance Method
-    # Self : 객체의 고유한 속성 값을 사용 
+    # Instance Method : 첫번째 매개변수로 self를 받도록 정의된 메서드
+    # Self : 객체의 고유한 속성 값을 사용 (메서드를 호출한 인스턴스)
     def detail_info(self) :
         print('Current Id : {}'.format(id(self)))
         print('Car Detail Info : {} {}'.format(self._company, self._details.get('price')))
