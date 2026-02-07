@@ -15,9 +15,10 @@
 import time
 
 def perf_clock(func) :
-    def perf_cloked(*args) :
+    def perf_clocked(*args) :
         st = time.perf_counter()        # 함수 시작 시간
         result = func(*args)            # 함수 실행
+
         et = time.perf_counter() - st   # 함수 종료 시간
         name = func.__name__            # 실행 함수명
         arg_str = ', '.join(repr(arg) for arg in args)  # 함수 매개변수
@@ -25,7 +26,7 @@ def perf_clock(func) :
         print('[%0.5fs] %s(%s) -> %r' % (et, name, arg_str, result))
 
         return result
-    return perf_cloked
+    return perf_clocked
 
 @perf_clock # 데코레이터로 사용할 함수명 작성
 def time_func(seconds) :
