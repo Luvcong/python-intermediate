@@ -66,7 +66,7 @@ cr3.send(15)    # 20 (y 값)
 print('--------------------')
 
 # 코루틴 ex 3)
-# 3.5 이상부터 StopIteration 자동 처리 (awiat)
+# 3.5 이상부터 StopIteration 자동 처리 (await)
 # 중첩 코루틴 처리
 
 def generator1() :
@@ -91,6 +91,7 @@ print(list(t2))
 print('----------')
 
 # yield from : Iterable한 데이터를 순차적으로 끝까지 출력
+# 반복문을 사용하지 않더라도 iterable한 객체를 순차 출력할 수 있음
 def generator2() :
     yield from 'AB'
     yield from range(1, 4)

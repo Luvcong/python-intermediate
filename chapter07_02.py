@@ -17,7 +17,7 @@ import timeit
 from urllib.request import urlopen
 from concurrent.futures import ThreadPoolExecutor
 import threading
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup   # 웹 스크리핑 라이브러리
 
 # 실행 시작 시간
 start = timeit.default_timer()
